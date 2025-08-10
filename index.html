@@ -4,14 +4,46 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>YakiSound — Healing Piano & Songs</title>
+
+  <!-- SEO 기본 -->
   <meta name="description" content="힐링 피아노와 노래를 만드는 YakiSound입니다. 모든 음악·영상은 100% 창작으로 제작됩니다.">
-  <meta name="keywords" content="YakiSound, 힐링 피아노, 노래, 피아노 음악, 음악 채널, 창작 음악, Healing Piano, Songs, Music,Piano Music">
-  
-  <meta property="og:title" content="YakiSound — Healing Piano & Original Animated MVs" />
-  <meta property="og:description" content="힐링 피아노 · 오리지널 애니메이션 MV. 100% 창작 포트폴리오와 최신 영상." />
+  <meta name="keywords" content="YakiSound, 힐링 피아노, 노래, 피아노 음악, 음악 채널, 창작 음악, Healing Piano, Songs, Music, Piano Music">
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://yakisound.netlify.app/">
+  <link rel="alternate" hreflang="ko" href="https://yakisound.netlify.app/">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/og-image.jpg" />
-  <meta property="og:url" content="https://yakisound.netlify.app" />
+  <meta property="og:url" content="https://yakisound.netlify.app/" />
+  <meta property="og:title" content="YakiSound — Healing Piano & Songs" />
+  <meta property="og:description" content="힐링 피아노와 노래를 만드는 YakiSound입니다. 모든 음악·영상은 100% 창작으로 제작됩니다." />
+  <meta property="og:image" content="https://yakisound.netlify.app/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://yakisound.netlify.app/" />
+  <meta name="twitter:title" content="YakiSound — Healing Piano & Songs" />
+  <meta name="twitter:description" content="힐링 피아노와 노래를 만드는 YakiSound입니다. 모든 음악·영상은 100% 창작으로 제작됩니다." />
+  <meta name="twitter:image" content="https://yakisound.netlify.app/og-image.jpg" />
+
+  <!-- JSON-LD 구조화 데이터 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "YakiSound",
+    "url": "https://yakisound.netlify.app/",
+    "description": "힐링 피아노와 노래를 만드는 YakiSound입니다. 모든 음악·영상은 100% 창작으로 제작됩니다.",
+    "image": "https://yakisound.netlify.app/og-image.jpg",
+    "sameAs": [
+      "https://www.youtube.com/@yakisound",
+      "https://tiktok.com/@yakimusicbox"
+    ],
+    "genre": ["Piano", "Instrumental", "K-Pop"]
+  }
+  </script>
+
+  <!-- 기존 파비콘 및 스타일 -->
   <link rel="icon" href="/favicon.ico" />
   <!-- Tailwind via CDN (no build step) -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -21,7 +53,7 @@
                     radial-gradient(800px 600px at 90% 20%, rgba(255,255,255,.9), rgba(245,247,250,.9)); }
     .glass { backdrop-filter: blur(12px); background: rgba(255,255,255,.6); }
     .btn { @apply px-5 py-3 rounded-2xl font-semibold shadow hover:shadow-md transition; }
-      .ratio-16x9{position:relative;padding-top:56.25%}
+    .ratio-16x9{position:relative;padding-top:56.25%}
     .ratio-16x9>iframe{position:absolute;inset:0;width:100%;height:100%}
   </style>
 </head>
