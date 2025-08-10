@@ -1,0 +1,175 @@
+[⚠️ Suspicious Content] <!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YakiSound — Healing Piano & Original Animated MVs</title>
+  <meta name="description" content="YakiSound | 힐링 피아노 & 오리지널 애니메이션 뮤직비디오. 100% 창작 음악과 감성 MV 포트폴리오." />
+  <meta property="og:title" content="YakiSound — Healing Piano & Original Animated MVs" />
+  <meta property="og:description" content="힐링 피아노 · 오리지널 애니메이션 MV. 100% 창작 포트폴리오와 최신 영상." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:url" content="https://yakisound.netlify.app" />
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Tailwind via CDN (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Subtle grain background */
+    body { background: radial-gradient(1200px 800px at 10% 10%, rgba(255,255,255,.9), rgba(245,247,250,.9)),
+                    radial-gradient(800px 600px at 90% 20%, rgba(255,255,255,.9), rgba(245,247,250,.9)); }
+    .glass { backdrop-filter: blur(12px); background: rgba(255,255,255,.6); }
+    .btn { @apply px-5 py-3 rounded-2xl font-semibold shadow hover:shadow-md transition; }
+  </style>
+</head>
+<body class="text-slate-900 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#home" class="flex items-center gap-2 font-bold text-lg">
+        <span class="inline-block w-2.5 h-6 bg-yellow-400 rounded"></span>
+        <span>YakiSound</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#works" class="hover:text-slate-700">Works</a>
+        <a href="#about" class="hover:text-slate-700">About</a>
+        <a href="#contact" class="hover:text-slate-700">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-block btn bg-yellow-400">Collab / Contact</a>
+      <button id="menuBtn" class="md:hidden p-2" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white/90">
+      <div class="px-4 py-3 flex flex-col gap-3 text-sm">
+        <a href="#works" class="hover:text-slate-700">Works</a>
+        <a href="#about" class="hover:text-slate-700">About</a>
+        <a href="#contact" class="hover:text-slate-700">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">
+          Healing Piano & <span class="text-yellow-500">Original Animated MVs</span>
+        </h1>
+        <p class="mt-5 text-slate-600 text-base sm:text-lg">
+          힐링 피아노와 오리지널 애니메이션 뮤직비디오를 만드는 창작 레이블 <strong>YakiSound</strong>입니다.
+          모든 음악·영상은 100% 창작으로 제작됩니다.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a class="btn bg-slate-900 text-white" href="https://www.youtube.com/watch?v=rOkfRUdo_cw" target="_blank" rel="noopener">▶ Latest MV</a>
+          <a class="btn bg-white border border-slate-300" href="https://linktr.ee/" target="_blank" rel="noopener">🎶 Listen (Spotify/Apple)</a>
+        </div>
+        <div class="mt-6 text-sm text-slate-500">업로드 타임: 매주 21:00–22:00 (KST)</div>
+      </div>
+      <div class="relative">
+        <!-- Replace src with your MV still image -->
+        <a href="https://www.youtube.com/watch?v=rOkfRUdo_cw" target="_blank" rel="noopener" class="group block">
+          <img src="/hero-mv-still.jpg" alt="YakiSound MV Still" class="w-full aspect-video object-cover rounded-2xl shadow-lg ring-1 ring-black/5 group-hover:shadow-xl transition"/>
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="glass rounded-full px-4 py-2 text-sm font-semibold shadow hidden group-hover:inline-flex">Watch on YouTube</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="py-16 sm:py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold">Selected Works</h2>
+        <a href="https://www.youtube.com/@" target="_blank" rel="noopener" class="text-sm text-slate-600 hover:text-slate-800">전체 보기 →</a>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+          <a href="https://www.youtube.com/watch?v=rOkfRUdo_cw" target="_blank" rel="noopener" class="block">
+            <img src="/thumb-amv.jpg" alt="이상한 하루, 이상한 춤" class="w-full aspect-video object-cover rounded-xl" />
+            <div class="px-1 py-3">
+              <h3 class="font-semibold">이상한 하루, 이상한 춤</h3>
+              <p class="mt-1 text-sm text-slate-600">감성 애니메이션 뮤직비디오 · Original</p>
+            </div>
+          </a>
+        </article>
+        <!-- Card 2 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+          <a href="#" target="_blank" rel="noopener" class="block">
+            <img src="/thumb-rainy-piano.jpg" alt="Rainy Day Piano" class="w-full aspect-video object-cover rounded-xl" />
+            <div class="px-1 py-3">
+              <h3 class="font-semibold">Rainy Day Piano</h3>
+              <p class="mt-1 text-sm text-slate-600">빗소리 & 피아노 · 집중/휴식</p>
+            </div>
+          </a>
+        </article>
+        <!-- Card 3 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+          <a href="#" target="_blank" rel="noopener" class="block">
+            <img src="/thumb-quote-song.jpg" alt="그럼… 힘들지" class="w-full aspect-video object-cover rounded-xl" />
+            <div class="px-1 py-3">
+              <h3 class="font-semibold">그럼… 힘들지</h3>
+              <p class="mt-1 text-sm text-slate-600">어록 기반 창작곡 · K‑Band Pop</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 sm:py-24 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold">About YakiSound</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-8 items-start">
+        <img src="/about.jpg" alt="YakiSound Studio" class="rounded-2xl shadow ring-1 ring-black/5 md:col-span-1 object-cover w-full aspect-video md:aspect-square" />
+        <div class="md:col-span-2 text-slate-700 leading-relaxed">
+          <p><strong>YakiSound</strong>는 힐링 피아노와 오리지널 애니메이션 MV를 만드는 창작 레이블입니다. 감성·집중·휴식을 위한 사운드와, 이야기가 있는 비주얼을 결합해 한 편의 작은 영화처럼 음악을 전합니다.</p>
+          <ul class="mt-4 list-disc list-inside space-y-1">
+            <li>채널 1 — 힐링 소리 쉼터: 피아노 연주</li>
+            <li>채널 2 — 야키의 뮤직 박스: Suno 기반 창작곡 & MV</li>
+            <li>업로드 — 롱폼 5개/주, 쇼츠 2개/주 (21–22시 공개)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 sm:py-24 bg-white">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold">Contact & Newsletter</h2>
+      <p class="mt-3 text-slate-600">콜라보, 라이선스, 피드백은 아래로 연락 주세요. 새로운 영상 소식도 받아보세요.</p>
+
+      <!-- Netlify form -->
+      <form name="contact" method="POST" data-netlify="true" class="mt-8 grid gap-4">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input required name="name" placeholder="이름" class="w-full rounded-xl border border-slate-300 px-4 py-3" />
+          <input required type="email" name="email" placeholder="이메일" class="w-full rounded-xl border border-slate-300 px-4 py-3" />
+        </div>
+        <textarea name="message" rows="4" placeholder="메시지" class="w-full rounded-xl border border-slate-300 px-4 py-3"></textarea>
+        <button class="btn bg-slate-900 text-white w-fit">보내기</button>
+      </form>
+
+      <!-- Socials -->
+      <div class="mt-10 flex flex-wrap items-center gap-3 text-sm">
+        <a href="https://www.youtube.com/@" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">YouTube</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">Instagram</a>
+        <a href="https://tiktok.com/@" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">TikTok</a>
+        <a href="https://open.spotify.com/" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">Spotify</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-slate-500 text-sm">
+    © 2025 YakiSound. All rights reserved.
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn?.addEventListener('click', () => menu.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
