@@ -1,10 +1,12 @@
-[⚠️ Suspicious Content] <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YakiSound — Healing Piano & Original Animated MVs</title>
-  <meta name="description" content="YakiSound | 힐링 피아노 & 오리지널 애니메이션 뮤직비디오. 100% 창작 음악과 감성 MV 포트폴리오." />
+  <title>YakiSound — Healing Piano & Songs</title>
+  <meta name="description" content="힐링 피아노와 노래를 만드는 YakiSound입니다. 모든 음악·영상은 100% 창작으로 제작됩니다.">
+  <meta name="keywords" content="YakiSound, 힐링 피아노, 노래, 피아노 음악, 음악 채널, 창작 음악, Healing Piano, Songs, Music,Piano Music">
+  
   <meta property="og:title" content="YakiSound — Healing Piano & Original Animated MVs" />
   <meta property="og:description" content="힐링 피아노 · 오리지널 애니메이션 MV. 100% 창작 포트폴리오와 최신 영상." />
   <meta property="og:type" content="website" />
@@ -19,6 +21,8 @@
                     radial-gradient(800px 600px at 90% 20%, rgba(255,255,255,.9), rgba(245,247,250,.9)); }
     .glass { backdrop-filter: blur(12px); background: rgba(255,255,255,.6); }
     .btn { @apply px-5 py-3 rounded-2xl font-semibold shadow hover:shadow-md transition; }
+      .ratio-16x9{position:relative;padding-top:56.25%}
+    .ratio-16x9>iframe{position:absolute;inset:0;width:100%;height:100%}
   </style>
 </head>
 <body class="text-slate-900 antialiased">
@@ -34,7 +38,7 @@
         <a href="#about" class="hover:text-slate-700">About</a>
         <a href="#contact" class="hover:text-slate-700">Contact</a>
       </nav>
-      <a href="#contact" class="hidden md:inline-block btn bg-yellow-400">Collab / Contact</a>
+      <a href="#contact" class="hidden md:inline-block btn bg-yellow-400">Contact</a>
       <button id="menuBtn" class="md:hidden p-2" aria-label="Open menu">☰</button>
     </div>
     <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white/90">
@@ -54,81 +58,154 @@
           Healing Piano & <span class="text-yellow-500">Original Animated MVs</span>
         </h1>
         <p class="mt-5 text-slate-600 text-base sm:text-lg">
-          힐링 피아노와 오리지널 애니메이션 뮤직비디오를 만드는 창작 레이블 <strong>YakiSound</strong>입니다.
+          힐링 피아노와 노래를 만드는 <strong>YakiSound</strong>입니다.
           모든 음악·영상은 100% 창작으로 제작됩니다.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a class="btn bg-slate-900 text-white" href="https://www.youtube.com/watch?v=rOkfRUdo_cw" target="_blank" rel="noopener">▶ Latest MV</a>
-          <a class="btn bg-white border border-slate-300" href="https://linktr.ee/" target="_blank" rel="noopener">🎶 Listen (Spotify/Apple)</a>
+          <!--<a class="btn bg-white border border-slate-300" href="https://linktr.ee/" target="_blank" rel="noopener">🎶 Listen (Spotify/Apple)</a>-->
         </div>
         <div class="mt-6 text-sm text-slate-500">업로드 타임: 매주 21:00–22:00 (KST)</div>
       </div>
       <div class="relative">
-        <!-- Replace src with your MV still image -->
-        <a href="https://www.youtube.com/watch?v=rOkfRUdo_cw" target="_blank" rel="noopener" class="group block">
-          <img src="/hero-mv-still.jpg" alt="YakiSound MV Still" class="w-full aspect-video object-cover rounded-2xl shadow-lg ring-1 ring-black/5 group-hover:shadow-xl transition"/>
-          <div class="absolute inset-0 flex items-center justify-center">
-            <span class="glass rounded-full px-4 py-2 text-sm font-semibold shadow hidden group-hover:inline-flex">Watch on YouTube</span>
-          </div>
-        </a>
+        <!-- YouTube embed instead of still image -->
+        <div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+          <iframe src="https://www.youtube.com/embed/rOkfRUdo_cw?rel=0&modestbranding=1" title="YakiSound MV"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Works -->
-  <section id="works" class="py-16 sm:py-24 bg-white">
+  <section id="Yakiworks" class="py-16 sm:py-24 bg-white">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-end justify-between mb-8">
-        <h2 class="text-2xl sm:text-3xl font-bold">Selected Works</h2>
-        <a href="https://www.youtube.com/@" target="_blank" rel="noopener" class="text-sm text-slate-600 hover:text-slate-800">전체 보기 →</a>
+        <h2 class="text-2xl sm:text-3xl font-bold">Selected Works(Song)</h2>
+        <a href="https://www.youtube.com/@yakisound" target="_blank" rel="noopener" class="text-sm text-slate-600 hover:text-slate-800">노래 전체 보기 →</a>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         <!-- Card 1 -->
         <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
-          <a href="https://www.youtube.com/watch?v=rOkfRUdo_cw" target="_blank" rel="noopener" class="block">
-            <img src="/thumb-amv.jpg" alt="이상한 하루, 이상한 춤" class="w-full aspect-video object-cover rounded-xl" />
-            <div class="px-1 py-3">
-              <h3 class="font-semibold">이상한 하루, 이상한 춤</h3>
-              <p class="mt-1 text-sm text-slate-600">감성 애니메이션 뮤직비디오 · Original</p>
-            </div>
-          </a>
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/_5dJ-EPRl84?rel=0&modestbranding=1" title="YakiSound MV"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
         </article>
         <!-- Card 2 -->
         <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
-          <a href="#" target="_blank" rel="noopener" class="block">
-            <img src="/thumb-rainy-piano.jpg" alt="Rainy Day Piano" class="w-full aspect-video object-cover rounded-xl" />
-            <div class="px-1 py-3">
-              <h3 class="font-semibold">Rainy Day Piano</h3>
-              <p class="mt-1 text-sm text-slate-600">빗소리 & 피아노 · 집중/휴식</p>
-            </div>
-          </a>
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/4gXhKBaFW1w?rel=0&modestbranding=1" title="YakiSound MV"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
         </article>
         <!-- Card 3 -->
         <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
-          <a href="#" target="_blank" rel="noopener" class="block">
-            <img src="/thumb-quote-song.jpg" alt="그럼… 힘들지" class="w-full aspect-video object-cover rounded-xl" />
-            <div class="px-1 py-3">
-              <h3 class="font-semibold">그럼… 힘들지</h3>
-              <p class="mt-1 text-sm text-slate-600">어록 기반 창작곡 · K‑Band Pop</p>
-            </div>
-          </a>
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/_p8Hgzv5mT0?rel=0&modestbranding=1" title="YakiSound MV"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
         </article>
+		
+		
+        <!-- Card 4 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/2KKxX2KuA-0?rel=0&modestbranding=1" title="YakiSound MV"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+        </article>	
+        <!-- Card 5 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/MWJn_U8Iykk?rel=0&modestbranding=1" title="YakiSound MV"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+        </article>	
+        <!-- Card 6 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/76eOwQCQY_o?rel=0&modestbranding=1" title="YakiSound MV"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+        </article>			
+		
       </div>
     </div>
   </section>
+
+  <section id="Yakiworks" class="py-16 sm:py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-8">
+        <h2 class="text-2xl sm:text-3xl font-bold">Selected Works(Healing Piano)</h2>
+        <a href="https://www.youtube.com/@힐링소리쉼터" target="_blank" rel="noopener" class="text-sm text-slate-600 hover:text-slate-800">힐링 피아노 전체 보기 →</a>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Card 1 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/kYO1EVeFhso?rel=0&modestbranding=1" title="힐링소리쉼터"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+        </article>
+        <!-- Card 2 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/nXwXl6icPxA?rel=0&modestbranding=1" title="힐링소리쉼터"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+        </article>
+        <!-- Card 3 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/W-z_aUdf0Ms?rel=0&modestbranding=1" title="힐링소리쉼터"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+        </article>
+		
+		
+        <!-- Card 4 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/xwE_Isz6Roc?rel=0&modestbranding=1" title="힐링소리쉼터"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+        </article>	
+        <!-- Card 5 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/3pv8NSyiugA?rel=0&modestbranding=1" title="힐링소리쉼터"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+        </article>	
+        <!-- Card 6 -->
+        <article class="group bg-slate-50 rounded-2xl p-3 ring-1 ring-slate-200 hover:ring-slate-300 transition">
+			<div class="ratio-16x9 rounded-2xl shadow-lg ring-1 ring-black/5 overflow-hidden">
+			  <iframe src="https://www.youtube.com/embed/_cpMWFenI4c?rel=0&modestbranding=1" title="힐링소리쉼터"
+					  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+        </article>			
+		
+      </div>
+    </div>
+  </section>
+
+
+
+
+
 
   <!-- About -->
   <section id="about" class="py-16 sm:py-24 bg-slate-50">
     <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-bold">About YakiSound</h2>
       <div class="mt-6 grid md:grid-cols-3 gap-8 items-start">
-        <img src="/about.jpg" alt="YakiSound Studio" class="rounded-2xl shadow ring-1 ring-black/5 md:col-span-1 object-cover w-full aspect-video md:aspect-square" />
+        <img src="about.jpg" alt="YakiSound Studio" class="rounded-2xl shadow ring-1 ring-black/5 md:col-span-1 object-cover w-full aspect-video md:aspect-square" />
         <div class="md:col-span-2 text-slate-700 leading-relaxed">
-          <p><strong>YakiSound</strong>는 힐링 피아노와 오리지널 애니메이션 MV를 만드는 창작 레이블입니다. 감성·집중·휴식을 위한 사운드와, 이야기가 있는 비주얼을 결합해 한 편의 작은 영화처럼 음악을 전합니다.</p>
+          <p><strong>YakiSound</strong>는 힐링 피아노와 노래를 만드는 창작 레이블입니다. 감성·집중·휴식을 위한 사운드와, 이야기가 있는 비주얼을 결합해 한 편의 작은 영화처럼 음악을 전합니다.</p>
           <ul class="mt-4 list-disc list-inside space-y-1">
             <li>채널 1 — 힐링 소리 쉼터: 피아노 연주</li>
             <li>채널 2 — 야키의 뮤직 박스: Suno 기반 창작곡 & MV</li>
-            <li>업로드 — 롱폼 5개/주, 쇼츠 2개/주 (21–22시 공개)</li>
           </ul>
         </div>
       </div>
@@ -139,7 +216,7 @@
   <section id="contact" class="py-16 sm:py-24 bg-white">
     <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-2xl sm:text-3xl font-bold">Contact & Newsletter</h2>
-      <p class="mt-3 text-slate-600">콜라보, 라이선스, 피드백은 아래로 연락 주세요. 새로운 영상 소식도 받아보세요.</p>
+      <p class="mt-3 text-slate-600">라이선스, 피드백은 아래로 연락 주세요. 새로운 영상 소식도 받아보세요.</p>
 
       <!-- Netlify form -->
       <form name="contact" method="POST" data-netlify="true" class="mt-8 grid gap-4">
@@ -154,10 +231,10 @@
 
       <!-- Socials -->
       <div class="mt-10 flex flex-wrap items-center gap-3 text-sm">
-        <a href="https://www.youtube.com/@" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">YouTube</a>
-        <a href="https://instagram.com/" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">Instagram</a>
-        <a href="https://tiktok.com/@" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">TikTok</a>
-        <a href="https://open.spotify.com/" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">Spotify</a>
+        <a href="https://www.youtube.com/@yakisound" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">YouTube</a>
+        <a href="https://tiktok.com/@yakimusicbox" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">TikTok</a>		
+        <!--<a href="https://instagram.com/" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">Instagram</a>  
+        <a href="https://open.spotify.com/" target="_blank" rel="noopener" class="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50">Spotify</a>-->
       </div>
     </div>
   </section>
